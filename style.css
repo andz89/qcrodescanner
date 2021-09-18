@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap");
+
+.textarea{
+  margin-top:5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.copytext{
+  color: #333;
+ height: 100%;
+    width:100%;
+    border: none;
+    resize: none;
+    outline: none; 
+    max-height: 500px; 
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+
+}
+#reader {
+  width: 100%;
+
+}
+.request_camera_btn {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 5px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin:auto;
+}
+.scan_image_btn {
+  background-color: rgb(7, 120, 165);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 5px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin-bottom: 10px;
+}
+input[type="file"] {
+  padding: 20px;
+  cursor: pointer;
+}
+.select_camera_label{
+
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin-bottom: 10px;
+
+}
+
+.select_camera{
+    background-color: rgb(230, 233, 233);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 5px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin-bottom: 10px;
+  display:none;
+}
+body{
+overflow-x: hidden;
+
+}
+.scanner{
+  display: none;
+  overflow-x: hidden;
+  margin-left: -20px;
+}
+
+.toggle{
+   display: block;
+}
