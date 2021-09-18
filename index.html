@@ -9,67 +9,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <button id="scanBtn">Scanner</button>
-     
+    <div class="parentElement">
+      <div class="div-showScanner">
+      <button id="showScanner">Scanner</button>
+      </div>
+
       <div class="scanner">
       <div id="reader" ></div>
       </div>
-
+      
+      
       <div class="textarea">
         <textarea id="result" class="copytext" readonly></textarea>
       </div>
+        </div>
      
+  
+
       <div>
-        <iframe src="https://script.google.com/macros/s/AKfycbz72Vh2BCayWmDHTfIvQ_G8HUYQIPELtnaYKN79dL9VQX27_H6v_1f9_rJWz3zqFOEQ/exec" width="100%" height="2000px" style="border:none;" allow="clipboard-read; clipboard-write"></iframe>
+        <iframe src="https://script.google.com/macros/s/AKfycbw85Nb9KJhOGatmM5juJu7mtfiFrzx6bpUIK0NLco7H7-y1qx9IpAj5aElZjMAw4P8g/exec" width="100%" height="2000px" style="border:none;" allow="clipboard-read; clipboard-write"></iframe>
       </div>
 
-    </div>
-    <script type="text/javascript">
-
-      let scanBtn = document.querySelector('#scanBtn')
-      scanBtn.addEventListener('click', ()=>{
-        let scanner = document.querySelector('.scanner')
-        scanner.classList.toggle('toggle')
-        
-        
-      })
-
-      //  <div>
-      //   <input type="text" id="qr_code">
-      //   <img id="qr_image" src="" width="500" height="500"alt="">
-      // </div> 
-      // let qr_code = document.querySelector('#qr_code')
-      
-      // qr_code.addEventListener('input', (e)=>{
-      //   let img = document.querySelector('#qr_image')
-      //   img.src =`https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=${e.target.value}`
-
-      //   document.body.appendChild(img)
-      // })
-  
 
 
-      function onScanSuccess(qrCodeMessage) {
-             let copyText = document.querySelector("#result");
-        document.getElementById("result").innerHTML = qrCodeMessage;
-        navigator.clipboard.writeText(`${copyText.value}`);
-        // html5QrcodeScanner.clear();
-      }
-
- 
-      function onScanError(errorMessage) {
-        //handle scan error
-      }
-      var html5QrcodeScanner = new Html5QrcodeScanner("reader", {
-        fps: 10,
-        qrbox: 250,
-      });
-      html5QrcodeScanner.render(onScanSuccess, onScanError);
-
-  
-
-
-    </script>
+    <script type="text/javascript" src="script.js"> </script>
   </body>
 </html>

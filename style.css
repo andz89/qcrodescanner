@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap");
 
 .textarea{
-  margin-top:5px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: none;
 }
 .copytext{
   color: #333;
@@ -44,6 +41,7 @@
   border-radius: 5px;
   font-family: "IBM Plex Sans Arabic", sans-serif;
   margin-bottom: 10px;
+  display:none;
 }
 input[type="file"] {
   padding: 20px;
@@ -74,11 +72,40 @@ overflow-x: hidden;
 
 }
 .scanner{
+
   display: none;
   overflow-x: hidden;
   margin-left: -20px;
+  clear: right;
 }
-
+.alert-message{
+background-color: #5cb85c;
+padding:10px;
+clear: right;
+color: #fff;
+text-align: center;
+max-width: 500px;
+margin: auto;
+}
 .toggle{
    display: block;
 }
+
+.div-showScanner{
+ float: right;
+  margin: 20px 10px 0px 40px;
+
+}
+#showScanner{
+  background-color:rgb(73, 73, 73);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 5px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  margin-bottom: 10px;
+}
+
